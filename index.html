@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistemas Quânticos - Início</title>
+
+        <!-- Importando a fonte Raleway do Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Início</a></li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                        <ul class="submenu">
+                            <li><a href="sobre.html">História</a></li>
+                            <li><a href="aplicacoes.html">Aplicações</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="implementacoes.html">Implementações</a>
+                        <ul class="submenu">
+                            <li><a href="algoritmos.html">Algoritmos</a></li>
+                            <li><a href="simulacoes.html">Simulações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Slider de Imagens -->
+        <section class="slider">
+            <div class="slide active">
+                <img src="assets/images/quantum1.jpg" alt="Imagem Quantum 1" />
+            </div>
+            <div class="slide">
+                <img src="assets/images/quantum2.jpg" alt="Imagem Quantum 2" />
+            </div>
+            <div class="slide">
+                <img src="assets/images/quantum3.jpg" alt="Imagem Quantum 3" />
+            </div>
+        </section>
+
+        <!-- Conteúdo Principal -->
+        <main>
+            <section id="sobre">
+                <h2>Sobre a Computação Quântica</h2>
+                <p>
+                    Explicação sobre os sistemas quânticos e suas aplicações
+                    práticas...
+                </p>
+            </section>
+
+            <section id="implementacoes">
+                <h2>Implementações de Sistemas Quânticos</h2>
+                <article>
+                    <h3>Algoritmos Quânticos</h3>
+                    <p>
+                        Detalhes sobre o Algoritmo de Shor, Algoritmo de Grover,
+                        e outros algoritmos importantes na computação quântica.
+                    </p>
+                </article>
+                <article>
+                    <h3>Simulações Quânticas</h3>
+                    <p>
+                        Visualizações de circuitos quânticos e simulações de
+                        qubits em estado superposto.
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Computação Quântica</p>
+            <p id="datetime"></p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
