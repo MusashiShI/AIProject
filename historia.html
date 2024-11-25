@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>História - Sistemas Quânticos</title>
+
+        <!-- Fonte Orbitron -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Canvas para as animações de fundo -->
+        <canvas id="energyCanvas"></canvas>
+
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Início</a></li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html" class="active">História</a></li>
+                            <li><a href="aplicacoes.html">Aplicações</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="implementacoes.html">Implementações</a>
+                        <ul class="submenu">
+                            <li><a href="algoritmos.html">Algoritmos</a></li>
+                            <li><a href="simulacoes.html">Simulações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main>
+            <h2>História da Física e Computação Quântica</h2>
+
+            <!-- Origem da Física Quântica -->
+            <section id="origem">
+                <h3>A Origem da Física Quântica</h3>
+                <p>
+                    A física quântica surgiu no início do século XX para explicar fenômenos que a física clássica não conseguia
+                    abordar, como o comportamento da luz e da matéria em escalas muito pequenas. 
+                    Em 1900, o físico <a href="https://pt.wikipedia.org/wiki/Max_Planck" target="_blank">Max Planck</a> introduziu
+                    o conceito de quantização da energia ao estudar a radiação emitida por corpos negros, marcando o início desta 
+                    revolução científica. Posteriormente, <a href="https://pt.wikipedia.org/wiki/Albert_Einstein" target="_blank">Albert Einstein</a>
+                    ampliou essa teoria ao explicar o efeito fotoelétrico, pelo qual a luz pode ser entendida como partículas chamadas fótons.
+                </p>
+                <p>
+                    Outros cientistas como <a href="https://pt.wikipedia.org/wiki/Niels_Bohr" target="_blank">Niels Bohr</a>,
+                    <a href="https://pt.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger" target="_blank">Erwin Schrödinger</a> e
+                    <a href="https://pt.wikipedia.org/wiki/Heisenberg" target="_blank">Werner Heisenberg</a>
+                    fizeram contribuições fundamentais para consolidar a teoria quântica, incluindo os princípios de superposição, 
+                    dualidade onda-partícula e o famoso "princípio da incerteza".
+                </p>
+            </section>
+
+            <!-- Transição para Computação -->
+            <section id="computacao">
+                <h3>Da Física Quântica à Computação Quântica</h3>
+                <p>
+                    A ideia de usar os princípios da mecânica quântica para computação foi proposta inicialmente na década de 1980
+                    por físicos como <a href="https://pt.wikipedia.org/wiki/Richard_Feynman" target="_blank">Richard Feynman</a> 
+                    e <a href="https://pt.wikipedia.org/wiki/David_Deutsch" target="_blank">David Deutsch</a>.
+                    Eles perceberam que os computadores clássicos não seriam capazes de simular sistemas quânticos de forma eficiente.
+                </p>
+                <p>
+                    A computação quântica baseia-se no uso de qubits, que podem representar 0, 1 ou uma superposição de ambos os estados,
+                    permitindo cálculos em paralelo. Além disso, o conceito de entrelaçamento quântico foi identificado como uma forma de
+                    acelerar a troca de informações entre qubits, revolucionando o processamento de dados.
+                </p>
+            </section>
+
+            <!-- Primeira Aplicação -->
+            <section id="primeira-aplicacao">
+                <h3>Primeira Aplicação Prática</h3>
+                <p>
+                    Uma das primeiras aplicações práticas da computação quântica foi desenvolvida em 1994, quando o matemático 
+                    <a href="https://pt.wikipedia.org/wiki/Peter_Shor" target="_blank">Peter Shor</a>
+                    criou um algoritmo capaz de fatorar números inteiros de forma eficiente em computadores quânticos.
+                    O <strong>Algoritmo de Shor</strong> demonstrou como os computadores quânticos poderiam quebrar sistemas de criptografia,
+                    como o RSA, algo inviável para máquinas clássicas.
+                </p>
+                <p>
+                    Desde então, a computação quântica expandiu-se para outras áreas, como otimização, simulação de moléculas e inteligência artificial.
+                </p>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>
+                &copy; 2024 Computação Quântica, IBM, Made By Jose Beselga
+                pv22524 [ for school project ]
+            </p>
+        </footer>
+
+        <!-- Script -->
+        <script src="script.js"></script>
+    </body>
+</html>

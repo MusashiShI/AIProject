@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sobre - Sistemas Quânticos</title>
+
+        <!-- Fonte Orbitron -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Canvas para as animações de fundo -->
+        <canvas id="energyCanvas"></canvas>
+
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Início</a></li>
+                    <li>
+                        <a href="sobre.html" class="active">Sobre</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="aplicacoes.html">Aplicações</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="implementacoes.html">Implementações</a>
+                        <ul class="submenu">
+                            <li><a href="algoritmos.html">Algoritmos</a></li>
+                            <li><a href="simulacoes.html">Simulações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main>
+            <h2>Sobre Física e Computação Quântica</h2>
+            <p>
+                A física quântica estuda o comportamento de partículas subatômicas,
+                introduzindo conceitos como superposição e entrelaçamento. Ela desafiou 
+                o entendimento clássico da física e revelou propriedades extraordinárias do universo.
+            </p>
+            <p>
+                A computação quântica é uma aplicação revolucionária dessa física, utilizando qubits em 
+                vez de bits tradicionais para processar informações. Isso possibilita cálculos exponencialmente 
+                mais rápidos em áreas como criptografia e simulação molecular.
+            </p>
+
+            <!-- Seção de Comparação -->
+            <section id="comparacao">
+                <h2>Comparação: Computadores Clássicos vs Quânticos</h2>
+                <div class="comparacao-container">
+                    <!-- Computador Clássico -->
+                    <div>
+                        <img src="assets/images/classico.jpg" alt="Computador Clássico" />
+                        <h3>Computador Clássico</h3>
+                        <p>
+                            Baseado em bits binários (0 ou 1), usa transistores para realizar
+                            operações. É adequado para tarefas lineares e sequenciais.
+                        </p>
+                        <ul>
+                            <li><strong>Processamento:</strong> Linear e determinístico.</li>
+                            <li><strong>Capacidades:</strong> Ideal para tarefas rotineiras.</li>
+                            <li><strong>Limitações:</strong> Ineficiente para cálculos complexos.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Computador Quântico -->
+                    <div>
+                        <img src="assets/images/quantico.jpg" alt="Computador Quântico" />
+                        <h3>Computador Quântico</h3>
+                        <p>
+                            Baseado em qubits, que exploram superposição e entrelaçamento. Soluciona problemas
+                            de forma exponencialmente mais rápida que os computadores clássicos em algumas tarefas.
+                        </p>
+                        <ul>
+                            <li><strong>Processamento:</strong> Paralelo e probabilístico.</li>
+                            <li><strong>Capacidades:</strong> Resolver problemas de otimização complexos.</li>
+                            <li><strong>Limitações:</strong> Tecnologia emergente e custo elevado.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conclusão -->
+            <section id="conclusao">
+                <h2>Conclusão</h2>
+                <p>
+                    A física quântica e a computação quântica representam a próxima fronteira da ciência e tecnologia.
+                    À medida que a tecnologia avança, sua aplicação promete transformar indústrias inteiras, desde
+                    inteligência artificial até a segurança digital.
+                </p>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>
+                &copy; 2024 Computação Quântica, IBM, Made By Jose Beselga
+                pv22524 [ for school project ]
+            </p>
+        </footer>
+
+        <!-- Script -->
+        <script src="script.js"></script>
+    </body>
+</html>

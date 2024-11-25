@@ -62,8 +62,14 @@ header {
 }
 
 .navbar li a:hover {
-    color: #4a90e2;
-    transform: scale(1.1);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(74, 144, 226, 0.8);
+    text-shadow: 0 0 15px rgba(74, 144, 226, 0.8);
+    padding: 0.5rem 1rem; /* Adiciona espaço extra ao redor das letras */
+    border-radius: 12px; /* Bordas arredondadas */
+    background-color: rgba(74, 144, 226, 0.2); /* Fundo levemente azul */
+    transition: all 0.3s ease;
 }
 
 /* Submenu */
@@ -94,9 +100,15 @@ header {
 }
 
 .submenu li a:hover {
-    color: #4a90e2;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(74, 144, 226, 0.8);
+    text-shadow: 0 0 15px rgba(74, 144, 226, 0.8);
+    padding: 0.5rem 1rem; /* Adiciona espaço extra ao redor das letras */
+    border-radius: 12px; /* Bordas arredondadas */
+    background-color: rgba(74, 144, 226, 0.2); /* Fundo levemente azul */
+    transition: all 0.3s ease;
 }
-
 /* Slider */
 .slider {
     position: relative;
@@ -170,4 +182,118 @@ canvas {
     width: 100%;
     height: 100%;
     z-index: -1; /* Coloca o canvas atrás do conteúdo */
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Estilos para a seção de comparação */
+#comparacao {
+    margin: 3% auto;
+    text-align: center;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#comparacao h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 2%;
+}
+
+.comparacao-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2%; /* Espaço entre os containers */
+}
+
+.comparacao-container div {
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 5%;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.comparacao-container div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+}
+
+.comparacao-container img {
+    width: 80%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.comparacao-container h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.comparacao-container p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+
+/* Estilos para o formulário de contato */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ddd;
+    font-size: 1rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #357abd;
 }

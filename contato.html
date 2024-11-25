@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistemas Quânticos - Contato</title>
+
+        <!-- Link para a fonte Orbitron -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Link para o CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Canvas para animação -->
+        <canvas id="energyCanvas"></canvas>
+
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Início</a></li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="aplicacoes.html">Aplicações</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="implementacoes.html">Implementações</a>
+                        <ul class="submenu">
+                            <li><a href="algoritmos.html">Algoritmos</a></li>
+                            <li><a href="simulacoes.html">Simulações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main>
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida ou sugestão? Preencha o formulário abaixo e entraremos em contato em breve.</p>
+
+            <!-- Formulário de Contato -->
+            <form action="https://formsubmit.co/seu-email@exemplo.com" method="POST" id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required />
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+
+                <!-- Campo para evitar spam -->
+                <input type="hidden" name="_captcha" value="false" />
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>
+                &copy; 2024 Computação Quântica, IBM, Made By Jose Beselga
+                pv22524 [ for school project ]
+            </p>
+            <p id="datetime"></p>
+        </footer>
+
+        <!-- Link para o JS -->
+        <script src="script.js"></script>
+    </body>
+</html>

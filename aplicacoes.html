@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aplicações da Computação Quântica</title>
+
+        <!-- Link para a fonte Orbitron -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Link para o CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Canvas para animação -->
+        <canvas id="energyCanvas"></canvas>
+
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Início</a></li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="aplicacoes.html">Aplicações</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="implementacoes.html">Implementações</a>
+                        <ul class="submenu">
+                            <li><a href="algoritmos.html">Algoritmos</a></li>
+                            <li><a href="simulacoes.html">Simulações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Slider de Imagens -->
+        <section class="slider">
+            <div class="slide active">
+                <img src="assets/images/quantum1.jpg" alt="Imagem Quantum 1" />
+            </div>
+            <div class="slide">
+                <img src="assets/images/quantum2.jpg" alt="Imagem Quantum 2" />
+            </div>
+            <div class="slide">
+                <img src="assets/images/quantum3.jpg" alt="Imagem Quantum 3" />
+            </div>
+            <div class="slide">
+                <img src="assets/images/quantum5.jpg" alt="Imagem Quantum 5" />
+            </div>
+            <div class="slide">
+                <img src="assets/images/quantum6.jpg" alt="Imagem Quantum 6" />
+            </div>
+            <div class="slide">
+                <img src="assets/images/quantum7.jpg" alt="Imagem Quantum 7" />
+            </div>
+            <div class="slide">
+                <img src="assets/images/quantum8.jpg" alt="Imagem Quantum 8" />
+            </div>
+        </section>
+
+        <!-- Conteúdo Principal -->
+        <main>
+            <h2>Aplicações da Computação Quântica</h2>
+            <p>
+                A computação quântica é um campo em expansão com inúmeras
+                possibilidades de aplicações que podem revolucionar diversas áreas
+                da ciência, tecnologia e até da vida cotidiana. Embora a tecnologia
+                ainda esteja em desenvolvimento, muitas aplicações potenciais já
+                estão sendo exploradas.
+            </p>
+
+            <section id="comparacao">
+                <h2>Aplicações</h2>
+                <div class="comparacao-container">
+                    <!-- Aplicação Criptografia Quântica -->
+                    <div class="aplicacao">
+                        <img
+                            src="assets/images/criptografia.png"
+                            alt="Criptografia Quântica"
+                        />
+                        <h3>Criptografia Quântica</h3>
+                        <p>
+                            A criptografia quântica utiliza os princípios da física
+                            quântica para criar sistemas de segurança invioláveis.
+                            Ela oferece um nível de segurança superior, impossibilitando
+                            a interceptação de informações sem que isso seja detectado.
+                            <a href="https://pt.wikipedia.org/wiki/Criptografia_qu%C3%A2ntica"
+                                target="_blank">Saiba mais</a>.
+                        </p>
+                    </div>
+
+                    <!-- Aplicação Simulação Quântica -->
+                    <div class="aplicacao">
+                        <img
+                            src="assets/images/simulacao.jpg"
+                            alt="Simulação Quântica"
+                        />
+                        <h3>Simulação Quântica</h3>
+                        <p>
+                            A computação quântica pode simular comportamentos de moléculas
+                            e materiais complexos com uma precisão impossível para
+                            computadores clássicos. Isso abre portas para avanços em
+                            farmacologia, química e novos materiais. 
+                        </p>
+                    </div>
+
+                    <!-- Aplicação Otimização Quântica -->
+                    <div class="aplicacao">
+                        <img
+                            src="assets/images/optimizacao.png"
+                            alt="Otimização Quântica"
+                        />
+                        <h3>Otimização Quântica</h3>
+                        <p>
+                            Algoritmos quânticos podem ser usados para otimizar processos
+                            complexos em diversos campos, desde logística até o design de
+                            novos produtos, resolvendo problemas muito rapidamente.
+                        </p>
+                    </div>
+
+                    <!-- Aplicação Machine Learning -->
+                    <div class="aplicacao">
+                        <img
+                            src="assets/images/ml.jpg"
+                            alt="Machine Learning Quântico"
+                        />
+                        <h3>Machine Learning Quântico</h3>
+                        <p>
+                            A computação quântica pode acelerar os algoritmos de machine
+                            learning, possibilitando a descoberta de padrões complexos
+                            em grandes volumes de dados, resultando em IA mais eficiente.
+                        </p>
+                    </div>
+
+                    <!-- Aplicação Pesquisa em Física Fundamental -->
+                    <div class="aplicacao">
+                        <img
+                            src="assets/images/fisica.png"
+                            alt="Pesquisa em Física"
+                        />
+                        <h3>Pesquisa em Física Fundamental</h3>
+                        <p>
+                            A computação quântica também é usada para simular fenômenos
+                            subatômicos, ajudando a entender o comportamento de partículas
+                            em níveis fundamentais, como em experimentos de física de
+                            partículas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                &copy; 2024 Computação Quântica, IBM, Made By Jose Beselga
+                pv22524 [ for school project ]
+            </p>
+            <p id="datetime"></p>
+        </footer>
+
+        <!-- Link para o JS -->
+        <script src="script.js"></script>
+    </body>
+</html>
