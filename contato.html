@@ -48,21 +48,8 @@
             <h2>Entre em Contato</h2>
             <p>Tem alguma dúvida ou sugestão? Preencha o formulário abaixo e entraremos em contato em breve.</p>
 
-            <!-- Formulário de Contato -->
-            <form action="https://formsubmit.co/seu-email@exemplo.com" method="POST" id="contactForm">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" placeholder="Seu nome" required />
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
-
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
-
-                <!-- Campo para evitar spam -->
-                <input type="hidden" name="_captcha" value="false" />
-                <button type="submit">Enviar</button>
-            </form>
+            <!-- Contêiner para o Formulário React -->
+            <div id="contactFormContainer"></div> 
         </main>
 
         <!-- Rodapé -->
@@ -74,7 +61,17 @@
             <p id="datetime"></p>
         </footer>
 
-        <!-- Link para o JS -->
-        <script src="script.js"></script>
+        <!-- Scripts -->
+        <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+        <!-- Script do React -->
+        <script src="src/ContactForm.js"></script>
+
+        <!-- Renderiza o Formulário -->
+        <script>
+            const root = document.getElementById("contactFormContainer");
+            ReactDOM.render(React.createElement(Formulario), root);
+        </script>
     </body>
 </html>
