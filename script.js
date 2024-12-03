@@ -21,6 +21,30 @@ setInterval(nextSlide, 5000);
 // Inicializa o primeiro slide
 showSlide(currentIndex);
 
+document.addEventListener("DOMContentLoaded", () => {
+  const carrossel = document.querySelector(".carrossel-container");
+  const anterior = document.querySelector(".navegacao.anterior");
+  const proxima = document.querySelector(".navegacao.proxima");
+  const cartaoWidth = 320; // Largura do cartão + margem
+  let deslocamento = 0;
+
+  anterior.addEventListener("click", () => {
+      deslocamento -= cartaoWidth;
+      if (deslocamento < 0) deslocamento = 0;
+      carrossel.style.transform = `translateX(-${deslocamento}px)`;
+  });
+
+  proxima.addEventListener("click", () => {
+      const maxScroll = carrossel.scrollWidth - carrossel.clientWidth;
+      deslocamento += cartaoWidth;
+      if (deslocamento > maxScroll) deslocamento = maxScroll;
+      carrossel.style.transform = `translateX(-${deslocamento}px)`;
+  });
+});
+
+
+
+
 // Canvas para animação de feixe de luz com rastro
 const canvas = document.getElementById("energyCanvas");
 const ctx = canvas.getContext("2d");
@@ -94,3 +118,5 @@ function animate() {
 // Inicia a criação de partículas e animação
 createParticles();
 animate();
+
+

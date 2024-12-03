@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Algoritmos Quânticos</title>
+
+        <!-- Link para a fonte Orbitron -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Link para o CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Canvas para animação -->
+        <canvas id="energyCanvas"></canvas>
+
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Início</a></li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="aplicacoes.html">Aplicações</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="implementacoes.html">Implementações</a>
+                        <ul class="submenu">
+                            <li><a href="algoritmos.html" class="active">Algoritmos</a></li>
+                            <li><a href="simulacoes.html">Simulações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main>
+            <h2>Algoritmos Quânticos</h2>
+            <p>
+                Os algoritmos quânticos são ferramentas poderosas que exploram os princípios da mecânica quântica para resolver problemas com eficiência superior aos métodos clássicos.
+                Confira abaixo os algoritmos mais notáveis:
+            </p>
+
+            <!-- Carrossel de Algoritmos -->
+            <div id="carrossel">
+                <div class="carrossel-wrapper">
+                    <div class="carrossel-container">
+                        <div class="cartao">
+                            <h3>Algoritmo de Shor</h3>
+                            <p>Um dos algoritmos mais famosos, o algoritmo de Shor é usado para fatoração de números inteiros. <a href="#">Saiba mais.</a></p>
+                        </div>
+                        <div class="cartao">
+                            <h3>Algoritmo de Grover</h3>
+                            <p>Este algoritmo permite buscar um item em um banco de dados não estruturado de forma mais rápida. <a href="#">Saiba mais.</a></p>
+                        </div>
+                        <div class="cartao">
+                            <h3>Algoritmo de Deutsch-Josza</h3>
+                            <p>Este algoritmo resolve problemas com uma única consulta. <a href="#">Saiba mais.</a></p>
+                        </div>
+                        <!-- Novos algoritmos -->
+                        <div class="cartao">
+                            <h3>Algoritmo de Simon</h3>
+                            <p>Este algoritmo resolve problemas com uma única consulta em um espaço de busca exponencialmente grande. <a href="#">Saiba mais.</a></p>
+                        </div>
+                        <div class="cartao">
+                            <h3>Algoritmo de HHL</h3>
+                            <p>Usado para resolver sistemas de equações lineares, o algoritmo HHL tem aplicações em machine learning e física quântica. <a href="#">Saiba mais.</a></p>
+                        </div>
+                        <div class="cartao">
+                            <h3>Algoritmo de Grover Generalizado</h3>
+                            <p>Uma extensão do algoritmo de Grover, aplicando-se a problemas mais gerais de busca. <a href="#">Saiba mais.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <!-- Botões de navegação -->
+                <button class="navegacao anterior">&#10094;</button>
+                <button class="navegacao proxima">&#10095;</button>
+            </section>
+            
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>
+                &copy; 2024 Computação Quântica, IBM, Made By Jose Beselga
+                pv22524 [ for school project ]
+            </p>
+            <p id="datetime"></p>
+        </footer>
+
+        <!-- Link para o JS -->
+        <script src="script.js"></script>
+    </body>
+</html>

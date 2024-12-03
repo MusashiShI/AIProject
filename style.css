@@ -303,3 +303,157 @@ p {
 text-align: center;
 
 }
+/* Estilo do carrossel */
+#carrossel {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Evita que o conteúdo transborde */
+    background: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px; /* Ajusta a altura */
+    box-sizing: border-box; /* Garante que o padding não afete o layout */
+}
+
+/* Container do carrossel */
+.carrossel-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Garante que ocupe 100% da largura disponível */
+}
+
+/* Conteúdo do carrossel */
+.carrossel-container {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease-in-out;
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    justify-content: flex-start; /* Alinha à esquerda */
+}
+
+/* Estilo dos cartões */
+.cartao {
+    width: 350px; /* Tamanho adequado para os cartões */
+    height: 350px;
+    background: #121212;
+    color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0; /* Garante que os cartões não encolham */
+}
+
+.cartao:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Imagem no cartão */
+.cartao img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Títulos e parágrafos */
+.cartao h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cartao p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Botões de navegação */
+.navegacao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.navegacao.anterior {
+    left: 10px;
+}
+
+.navegacao.proxima {
+    right: 10px;
+}
+
+.navegacao:hover {
+    background: #3498db;
+}
+
+/* Seção de Vídeos */
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .video {
+    background-color: #f9f9f900;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .video h3 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+  }
+  
+  .video p {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #ffffff00;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #33333300;
+    color: rgba(68, 33, 33, 0);
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  #datetime {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
