@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Notícias sobre computação quântica - atualizações de empresas líderes como IonQ, IBM e mais.">
+  <title>Notícias Quânticas</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- Canvas para animação -->
+        <canvas id="energyCanvas"></canvas>
+
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Início</a></li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                        <ul class="submenu">
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="aplicacoes.html">Aplicações</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="implementacoes.html">Implementações</a>
+                        <ul class="submenu">
+                            <li><a href="algoritmos.html">Algoritmos</a></li>
+                            <li><a href="simulacoes.html">Simulações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="main-news">
+                <h1>Notícias sobre Computação Quântica</h1>
+                <p>Fique atualizado com as últimas novidades sobre tecnologias quânticas, avanços e iniciativas das maiores empresas do setor, como IBM, IonQ, Google e outras.</p>
+                
+                <div class="news-section">
+                    <h2>Últimas Notícias</h2>
+                    <div class="news-item">
+                        <h3>IonQ expande sua liderança com 32 qubits</h3>
+                        <p>A IonQ lançou uma atualização revolucionária para sua arquitetura quântica.</p>
+                    </div>
+                    <div class="news-item">
+                        <h3>IBM revela o "Condor"</h3>
+                        <p>O primeiro chip quântico de 1.000 qubits da IBM está no horizonte.</p>
+                    </div>
+                    <div class="news-item">
+                        <h3>Google alcança novo marco</h3>
+                        <p>Pesquisadores do Google relatam progresso em algoritmos de correção de erros.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="secoes">
+                <h2>Seções</h2>
+                <ul>
+                    <li><a href="https://ionq.com/news" target="_blank">IonQ</a></li>
+                    <li><a href="https://research.ibm.com/quantum" target="_blank">IBM Quantum</a></li>
+                    <li><a href="https://quantumai.google/research" target="_blank">Google Quantum</a></li>
+                    <li><a href="https://www.quantinuum.com/news" target="_blank">Quantinuum</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Script para mostrar a data e hora no rodapé
+    const datetime = document.getElementById("datetime");
+    const now = new Date();
+    datetime.textContent = `Última atualização: ${now.toLocaleDateString()} às ${now.toLocaleTimeString()}`;
+  </script>
+</body>
+</html>
